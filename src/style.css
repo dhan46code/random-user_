@@ -1,0 +1,111 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --colorPrimary: #8b5cf6;
+  --colorHover: #7c3aed;
+  --textColor: #ffffff;
+  --borderColor: #c4b5fd;
+}
+
+body {
+  background: #44403c;
+  min-height: 100vh;
+}
+
+.block {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background: var(--colorPrimary);
+  z-index: 0;
+  transform: skewY(-5deg);
+  transform-origin: top left;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 110px;
+  padding-left: 62px;
+  padding-right: 62px;
+  padding-bottom: 47px;
+}
+
+.main-header .title {
+  max-width: 800px;
+}
+.title h3 {
+  margin-bottom: 9px;
+  font-size: 28px;
+}
+
+.title h2 {
+  font-size: 48px;
+}
+.title h3,
+.title h2 {
+  text-transform: capitalize;
+  letter-spacing: 1.5px;
+  color: var(--textColor);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: normal;
+}
+
+.image-container {
+  width: 200px;
+  height: 200px;
+  border: 8px solid var(--borderColor);
+  border-radius: 8px;
+  margin-top: 55px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.values-list {
+  padding-left: 62px;
+}
+
+.btn {
+  background: var(--colorPrimary);
+  border: transparent;
+  color: var(--textColor);
+  font-size: 2rem;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  margin-right: 51px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.btn:hover {
+  background-color: var(--colorHover);
+}
+
+.center {
+  text-align: center;
+}
+.btn-user {
+  width: 250px;
+  height: auto;
+  margin-top: 62px;
+  margin-left: 62px;
+  font-size: 1.25rem;
+  padding: 0.75rem 0;
+  text-transform: capitalize;
+}
